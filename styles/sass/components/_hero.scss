@@ -1,0 +1,15 @@
+@import '../variables/variables';
+@import '../mixins/mixins';
+.hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    picture, .hero-content {
+        grid-row: 1;
+    }
+    picture {
+        grid-column: 1 / 4;
+    }
+    .hero-content {
+        grid-column: 1 / -1;
+    }
+}

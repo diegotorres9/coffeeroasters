@@ -15,3 +15,16 @@
     color: $grey;
     letter-spacing: .92px;
 }
+
+@mixin create-your-plan-button {
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: $darkCyan;
+    color: $lightCream;
+    font-family: $fraunces;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

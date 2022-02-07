@@ -30,6 +30,7 @@ nav {
         visibility: hidden;
         transition: height .75s, opacity .75s, visibility .75s ease-out;
         transform-origin: top;
+        z-index: 9999;
         li {
             text-transform: capitalize;
             font-family: $fraunces;
@@ -44,6 +45,7 @@ nav {
         }
     }
     @media (min-width: $medium-screen) {
+        margin: 40px 40px 53px 40px;
         .mobile-menu-icon {
             // Use !important to override the inline styling of display block added by javascript function
             display: none !important; 
@@ -61,5 +63,8 @@ nav {
         .large-screen-menu {
             display: none;
         }
+    }
+    @media (min-width: $large-screen) {
+        margin: 43px 80px 43px 80px;
     }
 }

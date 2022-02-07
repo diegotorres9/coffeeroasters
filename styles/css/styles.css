@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap");
 nav {
   display: flex;
   align-items: center;
@@ -30,6 +32,7 @@ nav .mobile-screen-menu {
   visibility: hidden;
   transition: height 0.75s, opacity 0.75s, visibility 0.75s ease-out;
   transform-origin: top;
+  z-index: 9999;
 }
 nav .mobile-screen-menu li {
   text-transform: capitalize;
@@ -44,6 +47,9 @@ nav .mobile-screen-menu li:nth-child(2) {
   margin: 32px 0;
 }
 @media (min-width: 768px) {
+  nav {
+    margin: 40px 40px 53px 40px;
+  }
   nav .mobile-menu-icon {
     display: none !important;
   }
@@ -63,6 +69,43 @@ nav .mobile-screen-menu li:nth-child(2) {
 @media (max-width: 768px) {
   nav .large-screen-menu {
     display: none;
+  }
+}
+@media (min-width: 1008px) {
+  nav {
+    margin: 43px 80px 43px 80px;
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.hero picture, .hero .hero-content {
+  grid-row: 1;
+}
+.hero picture {
+  grid-column: 1/4;
+}
+.hero .hero-content {
+  grid-column: 1/-1;
+}
+
+body {
+  background-color: #FEFCF7;
+}
+
+main {
+  margin: 0 24px;
+}
+@media (min-width: 768px) {
+  main {
+    margin: 0 40px;
+  }
+}
+@media (min-width: 1008px) {
+  main {
+    margin: 0 80px;
   }
 }
 
