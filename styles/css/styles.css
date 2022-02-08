@@ -103,10 +103,10 @@ main {
 }
 .our-collection h2 {
   align-self: center;
-  font-size: 40px;
+  font-size: calc(clamp(2.5em, 8vw + 1rem, 9.375em));
   font-family: "Fraunces", serif;
   color: #83888F;
-  background-image: linear-gradient(180deg, #83888F 0%, #FEFCF7 70%);
+  background-image: linear-gradient(180deg, #83888F 0%, #FEFCF7 90%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -115,15 +115,54 @@ main {
 .our-collection .collection-grid {
   display: grid;
 }
+@media (min-width: 768px) {
+  .our-collection .collection-grid {
+    transform: translateY(-50px);
+  }
+}
+@media (min-width: 1008px) {
+  .our-collection .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+}
 .our-collection .collection-grid .grid-item {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .our-collection .collection-grid .grid-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1008px) {
+  .our-collection .collection-grid .grid-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
 .our-collection .collection-grid .grid-item:nth-child(-n+3) {
   margin-bottom: 48px;
 }
+@media (min-width: 768px) {
+  .our-collection .collection-grid .grid-item:nth-child(-n+3) {
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1008px) {
+  .our-collection .collection-grid .grid-item:nth-child(-n+3) {
+    margin-bottom: 0;
+  }
+}
 .our-collection .collection-grid .grid-item img {
   margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  .our-collection .collection-grid .grid-item img {
+    margin-bottom: 0px;
+  }
 }
 .our-collection .collection-grid .grid-item .grid-item-content {
   display: flex;
@@ -137,12 +176,22 @@ main {
   color: #333D4B;
   margin-bottom: 16px;
 }
+@media (min-width: 768px) {
+  .our-collection .collection-grid .grid-item .grid-item-content h3 {
+    align-self: flex-start;
+  }
+}
 .our-collection .collection-grid .grid-item .grid-item-content p {
   text-align: center;
   font-family: "Barlow", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 25px;
+}
+@media (min-width: 768px) {
+  .our-collection .collection-grid .grid-item .grid-item-content p {
+    text-align: left;
+  }
 }
 
 .hero {
