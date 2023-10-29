@@ -1,0 +1,124 @@
+body
+{
+    padding-top: clamp(2em, 2vw + 1rem, 3.125em);
+    padding-bottom: clamp(4.5em, 2vw + 1rem, 5.5em);
+    padding-left: clamp(1.5em, 2vw + 1rem, 5em);
+    padding-right: clamp(1.5em, 2vw + 1rem, 5em);
+}
+header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: clamp(40px, 2vw + 1rem, 50px);
+}
+
+header nav
+{
+    justify-self: end;
+}
+
+header nav .menu-desktop
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+}
+header .menu-icon {
+    display: none;
+}
+.menu-desktop li {
+    font-family: 'Barlow', sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #83888F;
+    font-weight: 700;
+    line-height: 0.9375rem;
+    letter-spacing: 0.05769rem;
+    text-transform: uppercase;
+    &:hover {
+        cursor: pointer;
+        color: #333D4B;
+    }
+}
+.menu-desktop li:not(:last-child)
+{
+    margin-right: 2em;
+}
+
+footer
+{
+    background-color: #333D4B;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    align-items: center;
+    padding: clamp(3.375em, 2vw + 1rem, 3em) clamp(5.3em, 2vw + 1rem, 13em);
+}
+
+footer .footer-menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+    color: #83888F;
+}
+
+.footer-menu li:not(:last-child)
+{
+    margin-right: 2em;
+}
+
+footer .social-links
+{
+    justify-self: end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-links svg:not(:last-child)
+{
+    margin-right: 1.5em;
+}
+@media screen and (max-width: 530px)
+{
+    header .menu-icon
+    {
+        display: flex;
+        align-self: center;
+        justify-self: end;
+    }
+
+    header nav
+    {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer .footer-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .footer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+    footer .footer-menu li:not(:last-child) {
+        margin-right: 0;
+    }
+}

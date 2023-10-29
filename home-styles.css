@@ -1,0 +1,69 @@
+.cta-plan {
+    color: #FEFCF7;
+    background-color: #0E8784;
+}
+.hero {
+    background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    color: #FEFCF7;
+    padding: clamp(1.5rem, 2vw + 1rem, 5.3em);
+}
+.hero h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    font-size: clamp(2.5em, 2vw + 1rem, 4.5em);
+    line-height: 4.5rem;
+}
+.hero p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+}
+.collection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.collection .collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 1fr;
+}
+.choose-us {
+    background-color: #2C343E;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.choose-us .choose-us-copy {
+    color: #FEFCF7;
+}
+.choose-us .card-grid .card {
+    background-color: #0E8784;
+    color: #FEFCF7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.how-works {
+    display: flex;
+    flex-direction: column;
+}
+.how-works .step-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.step-card-grid .step-card h2{
+    color: #FDD6BA;
+}
+.step-card-grid .step-card h3 {
+    color: #333D4B;
+}
+.step-card-grid .step-card p {
+    color: #333D4B
+}
