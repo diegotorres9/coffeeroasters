@@ -68,6 +68,18 @@ footer .footer-menu
     list-style-type: none;
     color: #83888F;
 }
+footer .footer-menu li {
+    font-family: 'Barlow', sans-serif;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .05769rem;
+    &:hover {
+        cursor: pointer;
+        color: #FEFCF7;
+    }
+}
 
 .footer-menu li:not(:last-child)
 {
