@@ -5,6 +5,9 @@ body
     padding-left: clamp(1.5em, 2vw + 1rem, 5em);
     padding-right: clamp(1.5em, 2vw + 1rem, 5em);
 }
+main > * {
+    margin-bottom: clamp(7.5em, 12vw + 2rem, 12.5em);
+}
 header
 {
     display: grid;
