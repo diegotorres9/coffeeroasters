@@ -126,13 +126,15 @@
 /* --------------------- CHOOSE US SECTION ------------ */
 .choose-us {
     background-color: #2C343E;
+    border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: auto 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    /* height: 573px; */
 }
 .choose-us .choose-us-copy {
     color: #FEFCF7;
-    grid-area: 1 / 3 / 2 / 7;
+    grid-area: 1 / 3 / 3 / 7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,7 +142,7 @@
 }
 .choose-us .card-grid {
     width: 100%;
-    grid-area: 2 / 2 / 3 / 8;
+    grid-area: 3 / 2 / 5 / 8;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr;
@@ -168,6 +170,9 @@
 }
 
 /* --------------------- HOW IT WORKS SECTION ------------ */
+.how-works > * {
+    margin-bottom: 5em;
+}
 .how-works {
     display: flex;
     flex-direction: column;
@@ -182,6 +187,12 @@
 .how-works .step-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5em;
+}
+.step-card .break::after
+{
+    content: "\a";
+    white-space: pre;
 }
 .step-card-grid .step-card h2{
     color: #FDD6BA;
@@ -202,4 +213,9 @@
 }
 .how-works .works-cta {
     flex-basis: auto;
+}
+@media screen and (width < 478px) {
+    .step-card .break::after {
+        content: none;
+    }
 }
