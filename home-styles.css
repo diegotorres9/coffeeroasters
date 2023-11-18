@@ -92,6 +92,7 @@
     font-size: clamp(2rem, -1.5211rem + 15.0235vw, 12rem);
     background: linear-gradient(180deg, rgba(151, 151, 151, 1) 0%, rgba(254, 252, 247, 1) 100%);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
 }
 .collection .collection-grid {
