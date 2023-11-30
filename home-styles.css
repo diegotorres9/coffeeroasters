@@ -128,13 +128,13 @@
     background-color: #2C343E;
     border-radius: 8px;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     /* height: 573px; */
 }
 .choose-us .choose-us-copy {
     color: #FEFCF7;
-    grid-area: 1 / 3 / 3 / 7;
+    grid-area: 2 / 3 / 5 / 11;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,21 +142,29 @@
 }
 .choose-us .card-grid {
     width: 100%;
-    grid-area: 3 / 2 / 5 / 8;
+    grid-area: 5 / 2 / 12 / 12;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr;
     gap: 2em;
+
 }
 .choose-us .card-grid .card {
     background-color: #0E8784;
     color: #FEFCF7;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 4.5rem 3rem 3rem 3rem;
     text-align: center;
     border-radius: 8px;
+    height: 382px;
 }
 .choose-us-copy h3 {
     font-family: 'Fraunces', sans-serif;
@@ -168,7 +176,15 @@
     line-height: 1.625rem;
     font-size: 1rem
 }
-
+@media screen and (width > 700px) and (width < 1024px) {
+    .choose-us .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .choose-us .card-grid .card {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+}
 /* --------------------- HOW IT WORKS SECTION ------------ */
 .how-works > * {
     margin-bottom: 5em;
@@ -199,11 +215,13 @@
     font-family: 'Fraunces', sans-serif;
     font-size: 4.5em;
     line-height: 4.5rem;
+    margin-bottom: 2.38rem;
 }
 .step-card-grid .step-card h3 {
     color: #333D4B;
     font-family: 'Fraunces', sans-serif;
     font-size: clamp(1.75em, 2vw + 1rem, 2em);
+    margin-bottom: 2.625rem;
 }
 .step-card-grid .step-card p {
     color: #333D4B;
@@ -215,7 +233,22 @@
     flex-basis: auto;
 }
 @media screen and (width < 478px) {
+    .how-works .works-cta {
+        align-self: center;
+    }
     .step-card .break::after {
         content: none;
+    }
+    .step-card > *:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+    .step-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .step-card p {
+        text-align: center;
     }
 }
