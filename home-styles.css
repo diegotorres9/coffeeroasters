@@ -125,24 +125,26 @@
 }
 /* --------------------- CHOOSE US SECTION ------------ */
 .choose-us {
-    background-color: #2C343E;
-    border-radius: 8px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    /* height: 573px; */
+    grid-template-rows: repeat(4, auto);
 }
 .choose-us .choose-us-copy {
     color: #FEFCF7;
-    grid-area: 2 / 3 / 5 / 11;
+    grid-area: 1 / 1 / 3 / 13;
     display: flex;
+    border-radius: 8px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    height: 573px;
+    width: 100%;
+    background-color: #2c343e;
+    padding: clamp(4rem, 3.2077rem + 3.3803vw, 6.25rem) clamp(1.5rem, -6.1144rem + 32.4883vw, 23.125rem) 0 clamp(1.5rem, -6.1144rem + 32.4883vw, 23.125rem);
 }
 .choose-us .card-grid {
     width: 100%;
-    grid-area: 5 / 2 / 12 / 12;
+    grid-area: 2 / 2 / 4 / 12;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: 1fr;
@@ -152,10 +154,6 @@
 .choose-us .card-grid .card {
     background-color: #0E8784;
     color: #FEFCF7;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
@@ -165,6 +163,23 @@
     text-align: center;
     border-radius: 8px;
     height: 382px;
+}
+.card-grid .card .card-copy {
+    align-self: start;
+}
+.card-grid .card .card-copy h4 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 900;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+}
+.card-grid .card .card-copy p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.625rem;
 }
 .choose-us-copy h3 {
     font-family: 'Fraunces', sans-serif;
@@ -181,8 +196,36 @@
         grid-template-columns: 1fr;
     }
     .choose-us .card-grid .card {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        height: 180px;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: 100px;
+        padding: 2.56rem 3rem 2.56rem 4.38rem;
+        gap: 3.44rem;
+    }
+    .card-grid .card .card-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: start;
+    }
+    .card-grid .card .card-copy h4 {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (width <= 425px) {
+    .choose-us {
+        display: grid;
+        grid-template-rows: 350px 1fr;
+    }
+    .choose-us .choose-us-copy {
+        height: 902px;
+    }
+    .choose-us .card-grid {
+        /* padding: 0 1.5rem; */
+        grid-area: 2 / 2 / 2  / 12;
+    }
+    .card-grid .card {
+        width: 279px;
     }
 }
 /* --------------------- HOW IT WORKS SECTION ------------ */
