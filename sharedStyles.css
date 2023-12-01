@@ -33,7 +33,8 @@ header nav .menu-desktop
 header .menu-icon {
     display: none;
 }
-.menu-desktop li {
+.menu-desktop a {
+    text-decoration: none;
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
     font-size: 0.75rem;
@@ -69,11 +70,12 @@ footer .footer-menu
     justify-content: center;
     padding: 0;
     list-style-type: none;
-    color: #83888F;
 }
-footer .footer-menu li {
+footer .footer-menu a {
+    text-decoration: none;
     font-family: 'Barlow', sans-serif;
     font-size: .75em;
+    color: #83888F;
     font-weight: 700;
     line-height: 1rem;
     text-transform: uppercase;
