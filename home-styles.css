@@ -9,6 +9,10 @@
         background-color: #66D2CF;
     }
 }
+main>*
+{
+    margin-bottom: clamp(7.5em, 12vw + 2rem, 12.5em);
+}
 /* --------------------- HERO SECTION ------------ */
 .hero {
     background-image: url("/assets/home/desktop/image-hero-coffeepress.jpg");
