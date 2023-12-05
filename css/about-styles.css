@@ -1,1 +1,54 @@
 /* ABOUT PAGE STYLES */
+main > * {
+    margin-bottom: clamp(7.5rem, 6.4437rem + 4.5070vw, 10.5rem);
+}
+
+main .hero {
+    background-image: url("../assets/about/desktop/image-hero-whitecup.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.hero-about-copy {
+    align-self: center;
+    padding: 0 5.31rem;
+}
+.hero-about-copy h1 {
+    font-family: 'Fraunces', sans-serif;
+    color: #FEFCF7;
+    font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+    margin-bottom: 1.5rem;
+}
+.hero-about-copy p {
+    font-family: 'Barlow',sans-serif;
+    color: #FEFCF7;
+    font-size: 1rem;
+}
+@media screen and (width > 475px) and (width < 1024px) {
+    main .hero {
+        background-image: url("../assets/about/tablet/image-hero-whitecup.jpg");
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .hero-about-copy {
+        padding: 0 3.63rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    main .hero {
+        background-image: url("../assets/about/mobile/image-hero-whitecup.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-about-copy {
+        padding: 0 1.5rem;
+    }
+}
