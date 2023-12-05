@@ -101,3 +101,44 @@ main .hero {
         text-align: center;
     }
 }
+/* ----------------- QUALITY SECTION --------------------------- */
+.quality {
+    background-image: url("../assets/about/desktop/bg-quality.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 474px;
+    border-radius: 0.5rem;
+    display: flex;
+}
+.quality-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.quality-grid picture {
+    position: absolute;
+    top: -88px;
+    right: 85px;
+}
+.quality-copy {
+    align-self: center;
+    padding: 0 5.31rem;
+}
+.quality-copy h2 {
+    font-family: 'Fraunces', sans-serif;
+    color: #FEFCF7;
+    line-height: 3rem;
+    font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+    margin-bottom: 2rem;
+}
+.quality-copy p {
+    font-family: 'Barlow', sans-serif;
+    color: #FEFCF7;
+    line-height: 1.625rem;
+    font-size: 1rem;
+}
+picture img {
+    border-radius: 0.5rem;
+}
