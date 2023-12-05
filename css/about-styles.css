@@ -52,3 +52,52 @@ main .hero {
         padding: 0 1.5rem;
     }
 }
+/* ---------------------- COMMITMENT SECTION ---------------- */
+.commitment {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 7.81rem;
+    padding: 0 clamp(1.5rem, -0.2500rem + 11.7333vw, 10.31rem);
+
+}
+.commitment img {
+    border-radius: .5rem;
+}
+.commitment-copy {
+    align-self: center;
+}
+.commitment-copy h2 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: clamp(2rem, 1.8239rem + 0.7512vw, 2.5rem);
+    margin-bottom: clamp(1.88rem, 1.8377rem + 0.1803vw, 2rem);
+    color: #333d4b;
+}
+.commitment-copy p {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color: #333d4b;
+}
+@media screen and (width > 475px) and (width < 1024px) {
+    .commitment {
+        gap: 4.31rem;
+        padding: 0;
+        /* background-color: firebrick; */
+        /* display: flex; */
+        /* padding: 0 2.5rem; */
+    }
+    .commitment-copy {
+        align-self: auto;
+    }
+}
+@media screen and (max-width: 500px) {
+    .commitment {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .commitment-copy {
+        text-align: center;
+    }
+}
