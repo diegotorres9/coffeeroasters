@@ -142,3 +142,76 @@ main .hero {
 picture img {
     border-radius: 0.5rem;
 }
+@media screen and (width > 475px) and (width <= 1030px) {
+    .quality {
+        background-image: url("../assets/about/tablet/bg-quality.png");
+        height: 488px;
+        position: relative;
+    }
+    .quality-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        /* align-items: center; */
+        justify-items: center;
+    }
+    .quality-grid picture {
+        position: absolute;
+        top: 0;
+        right: 150px;
+        /* left: 10px; */
+        /* grid-area: 1 / 1 / 2 / 2;*/
+        align-self: center;
+    }
+    .quality-copy {
+        grid-area: 2 / 1 / 3 / 2;
+        align-self: end;
+        text-align: center;
+        margin-bottom: 10rem;
+    }
+    .quality-copy h2 {
+        margin-bottom: 1.5rem;
+    }
+}
+/* ---------------- HEADQUARTERS --------------------- */
+.headquarters {
+    display: flex;
+    flex-direction: column;
+}
+.headquarters h3 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: #83888F;
+    margin-bottom: 4.5rem;
+}
+.headquarters .headquarters-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(327px, auto));
+    row-gap: 5rem;
+    container: headquarters / inline-size;
+}
+@container headquarters (width < 700px) {
+    .headquarters-container .headquarter
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    .headquarters-container .headquarter address{
+        text-align: center;
+    }
+}
+.headquarters .headquarters-container svg {
+    margin-bottom: 3rem;
+}
+.headquarters-container .headquarter h4 {
+    font-family: 'Fraunces', sans-serif;
+    font-size: clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
+    margin-bottom: 1.5rem;
+}
+.headquarters-container .headquarter address {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    text-align: left;
+}
