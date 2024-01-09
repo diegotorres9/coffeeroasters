@@ -11,7 +11,7 @@
   
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/sharedStyles.css">
-  <link rel="stylesheet" href="css/about-styles.css">
+  <link rel="stylesheet" href="css/plan-styles.css">
 
 
   <title>Frontend Mentor | Coffeeroasters subscription site</title>
@@ -48,7 +48,7 @@
 </header>
 
 <main>
-  <section class=".hero create-a-plan-hero">
+  <section class="hero create-a-plan-hero">
     <div class="plan-hero-copy">
     <h1>Create a plan</h1>
     <p>Build a subscription plan that best fits your needs. We offer an assortment of
@@ -118,43 +118,42 @@
         </li>
       </ul>
   </div>
-  </section>
-  <section class="question-accordions">
-
-      <details open class="coffee accordion" id="accordion">
-        <summary>How do you drink your coffee?</summary>
-        <div class="type" id="type">
-          <div class="item capsule" id="capsule">
-              <h3>Capsule</h3>
-              <p>Compatible with Nespresso systems and similar brewers</p>
-          </div>
-          <div class="item filter" id="filter">
-            <h3>Filter</h3>
-            <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
-          </div>
+  <div class="question-accordions">
+  
+    <details open class="coffee accordion" id="accordion">
+      <summary>How do you drink your coffee?</summary>
+      <div class="type" id="type">
+        <div class="item capsule" id="capsule">
+          <h3>Capsule</h3>
+          <p>Compatible with Nespresso systems and similar brewers</p>
         </div>
-        <div class="item espresso" id="espresso">
-          <h3>Espresso</h3>
-          <p>Dense and finely ground beans for an intense, flavorful experience</p>
+        <div class="item filter" id="filter">
+          <h3>Filter</h3>
+          <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
         </div>
-      </details>
-    
+      </div>
+      <div class="item espresso" id="espresso">
+        <h3>Espresso</h3>
+        <p>Dense and finely ground beans for an intense, flavorful experience</p>
+      </div>
+    </details>
+  
     <details class="type accordion" id="accordion">
       <summary>What type of coffee?</summary>
-        <div class="item single-origin" id="single-origin">
-          <h3>Single Origin</h3>
-          <p>Distinct, high quality coffee from a specific family-owned farm</p>
-        </div>
-        <div class="item decaf" id="decaf">
-          <h3>Decaf</h3>
-          <p>Just like regular coffee, except the caffeine has been removed</p>
-        </div>
-        <div class="item blended" id="blended">
-          <h3>Blended</h3>
-          <p>Combination of two or three dark roasted beans of organic coffees</p>
-        </div>
+      <div class="item single-origin" id="single-origin">
+        <h3>Single Origin</h3>
+        <p>Distinct, high quality coffee from a specific family-owned farm</p>
+      </div>
+      <div class="item decaf" id="decaf">
+        <h3>Decaf</h3>
+        <p>Just like regular coffee, except the caffeine has been removed</p>
+      </div>
+      <div class="item blended" id="blended">
+        <h3>Blended</h3>
+        <p>Combination of two or three dark roasted beans of organic coffees</p>
+      </div>
     </details>
-
+  
     <details class="quantity accordion" id="accordion">
       <summary>How much would you like?</summary>
       <div class="item two-hundred-and-fifty" id="two-hundreed-and-fifty">
@@ -170,7 +169,7 @@
         <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
       </div>
     </details>
-
+  
     <details class="grind accordion" id="accordion">
       <summary>Want us to grind them?</summary>
       <div class="item wholebean" id="wholebean">
@@ -186,7 +185,7 @@
         <p>Course ground beans specially suited for french press coffee</p>
       </div>
     </details>
-
+  
     <details class="delivery accordion" id="accordion">
       <summary>How often should we deliver?</summary>
       <div class="item weekly" id="weekly">
@@ -202,32 +201,36 @@
         <p>$22.50 per shipment. Includes free priority shipping.</p>
       </div>
     </details>
+  
+  </div>
 
+    <section class="order-summary" id="order-summary">
+      <h4>Order Summary</h4>
+      <p>“I drink coffee as <span id="drink">_____ </span>, with a <span
+          id="type">_____</span>type of bean. <span id="amount">_____ </span> ground
+        ala <span id="grind">_____ </span>,
+        sent to me <span id="time">_____. </span>” </p>
+    </section>
+    
+    <a href="#" class="cta-button">Create my plan!</a>
   </section>
-
-  <section class="order-summary" id="order-summary">
-  <h4>Order Summary</h4>
-  <p>“I drink coffee as <span id="drink">_____ </span>, with a <span id="type">_____</span>type of bean. <span id="amount">_____ </span> ground ala <span id="grind">_____ </span>,
-  sent to me <span id="time">_____. </span>” </p>
-  </section>
-
-  <a href="#" class="cta-button">Create my plan!</a>
+  
 </main>
 
   <!-- Modal -->
-  <div class="modal">
-    Order Summary
+  <div class="modal" style="display: none;">
+    <h2>Order Summary</h2>
     
-    “I drink coffee as _____, with a _____ type of bean. _____ ground ala _____,
-    sent to me _____.”
+    <p>“I drink coffee as <span id="drink">_____ </span>, with a _____ type of bean. _____ ground ala _____,
+    sent to me _____.”</p>
     
-    Is this correct? You can proceed to checkout or go back to plan selection if
+    <p>Is this correct? You can proceed to checkout or go back to plan selection if
     something
-    is off. Subscription discount codes can also be redeemed at the checkout.
+    is off. Subscription discount codes can also be redeemed at the checkout.</p>
     
-    $_____/month
+    $<span id="per-month-total">_____/</span>month
     
-    Checkout
+    <a href="#" class="checkout-link">Checkout</a>
   </div>
 
   <!-- End modal -->
