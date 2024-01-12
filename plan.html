@@ -145,7 +145,7 @@
   
     <details open class="coffee accordion" id="accordion">
       <summary>How do you drink your coffee?<img src="assets/plan/desktop/icon-arrow.svg"></summary>
-      <div class="type" id="type">
+      <div class="accordion-container" id="accordion-container">
         <div class="item capsule" id="capsule">
           <h3>Capsule</h3>
           <p>Compatible with Nespresso systems and similar brewers</p>
@@ -154,74 +154,85 @@
           <h3>Filter</h3>
           <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
         </div>
-      </div>
-      <div class="item espresso" id="espresso">
-        <h3>Espresso</h3>
-        <p>Dense and finely ground beans for an intense, flavorful experience</p>
+        <div class="item espresso" id="espresso">
+          <h3>Espresso</h3>
+          <p>Dense and finely ground beans for an intense, flavorful experience</p>
+        </div>
       </div>
     </details>
   
     <details class="type accordion" id="accordion">
       <summary>What type of coffee?<img src="assets/plan/desktop/icon-arrow.svg"></summary>
-      <div class="item single-origin" id="single-origin">
-        <h3>Single Origin</h3>
-        <p>Distinct, high quality coffee from a specific family-owned farm</p>
+      <div class="accordion-container">
+        <div class="item single-origin" id="single-origin">
+          <h3>Single Origin</h3>
+          <p>Distinct, high quality coffee from a specific family-owned farm</p>
+        </div>
+        <div class="item decaf" id="decaf">
+          <h3>Decaf</h3>
+          <p>Just like regular coffee, except the caffeine has been removed</p>
+        </div>
+        <div class="item blended" id="blended">
+          <h3>Blended</h3>
+          <p>Combination of two or three dark roasted beans of organic coffees</p>
       </div>
-      <div class="item decaf" id="decaf">
-        <h3>Decaf</h3>
-        <p>Just like regular coffee, except the caffeine has been removed</p>
-      </div>
-      <div class="item blended" id="blended">
-        <h3>Blended</h3>
-        <p>Combination of two or three dark roasted beans of organic coffees</p>
-      </div>
+    </div>
     </details>
   
     <details class="quantity accordion" id="accordion">
       <summary>How much would you like?<img src="assets/plan/desktop/icon-arrow.svg"></summary>
-      <div class="item two-hundred-and-fifty" id="two-hundreed-and-fifty">
-        <h3>250g</h3>
-        <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
-      </div>
-      <div class="item five-hundred" id="five-hundred">
-        <h3>500g</h3>
-        <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
-      </div>
-      <div class="item one-thousand" id="one-thousand">
-        <h3>1000g</h3>
-        <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+      <div class="accordion-container">
+      
+        <div class="item two-hundred-and-fifty" id="two-hundreed-and-fifty">
+          <h3>250g</h3>
+          <p>Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+        </div>
+        <div class="item five-hundred" id="five-hundred">
+          <h3>500g</h3>
+          <p>Perfect option for a couple. Yields about 40 delectable cups.</p>
+        </div>
+        <div class="item one-thousand" id="one-thousand">
+          <h3>1000g</h3>
+          <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+        </div>
       </div>
     </details>
   
     <details class="grind accordion" id="accordion">
       <summary>Want us to grind them?<img src="assets/plan/desktop/icon-arrow.svg"></summary>
-      <div class="item wholebean" id="wholebean">
-        <h3>Wholebean</h3>
-        <p>Best choice if you cherish the full sensory experience</p>
-      </div>
-      <div class="item grind-filter" id="grind-filter">
-        <h3>Filter</h3>
-        <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
-      </div>
-      <div class="item cafetiére" id="cafetiére">
-        <h3>Cafetiére</h3>
-        <p>Course ground beans specially suited for french press coffee</p>
+      <div class="accordion-container">
+      
+        <div class="item wholebean" id="wholebean">
+          <h3>Wholebean</h3>
+          <p>Best choice if you cherish the full sensory experience</p>
+        </div>
+        <div class="item grind-filter" id="grind-filter">
+          <h3>Filter</h3>
+          <p>For drip or pour-over coffee methods such as V60 or Aeropress</p>
+        </div>
+        <div class="item cafetiére" id="cafetiére">
+          <h3>Cafetiére</h3>
+          <p>Course ground beans specially suited for french press coffee</p>
+        </div>
       </div>
     </details>
   
     <details class="delivery accordion" id="accordion">
       <summary>How often should we deliver?<img src="assets/plan/desktop/icon-arrow.svg"></summary>
-      <div class="item weekly" id="weekly">
-        <h3>Every week</h3>
-        <p>$14.00 per shipment. Includes free first-class shipping.</p>
-      </div>
-      <div class="item biweekly" id="biweekly">
-        <h3>Every 2 weeks</h3>
-        <p>$17.25 per shipment. Includes free priority shipping.</p>
-      </div>
-      <div class="item monthly" id="monthly">
-        <h3>Every month</h3>
-        <p>$22.50 per shipment. Includes free priority shipping.</p>
+      <div class="accordion-container">
+      
+        <div class="item weekly" id="weekly">
+          <h3>Every week</h3>
+          <p>$14.00 per shipment. Includes free first-class shipping.</p>
+        </div>
+        <div class="item biweekly" id="biweekly">
+          <h3>Every 2 weeks</h3>
+          <p>$17.25 per shipment. Includes free priority shipping.</p>
+        </div>
+        <div class="item monthly" id="monthly">
+          <h3>Every month</h3>
+          <p>$22.50 per shipment. Includes free priority shipping.</p>
+        </div>
       </div>
     </details>
   
@@ -235,7 +246,7 @@
         sent to me <span id="time">_____. </span>” </p>
     </section>
     
-    <a href="#" class="cta-button">Create my plan!</a>
+    <a href="#" class="plan-button">Create my plan!</a>
   </section>
   
 </main>
