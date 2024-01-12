@@ -1,4 +1,4 @@
-body
+main, header, footer
 {
     padding-top: clamp(2em, 2vw + 1rem, 3.125em);
     padding-bottom: clamp(4.5em, 2vw + 1rem, 5.5em);
